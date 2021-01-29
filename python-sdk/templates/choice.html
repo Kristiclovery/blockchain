@@ -1,0 +1,60 @@
+<!-- role panel -->
+<!-- choose mode: developer or user -->
+
+{% extends 'base.html' %}
+{% block content %}
+
+<div style="
+		width: 100%;
+        text-align: center;
+        font-family: 'Arial Narrow', Arial, sans-serif;
+    ">
+	<h1>Supply Chain Finance System</h1>
+	<hr align='center' width='1200' size='5' color='#87CEFA'>
+	<br>
+	<form action='/registerCompany' method=post enctype=multipart/form-data>
+		<input type=submit value=RegisterCompany style="height:40px; width: 30%;display:inline-block; text-align:center;font-family: 'Arial Narrow', Arial, sans-serif;">
+	</form>
+	<br>
+
+	<form action='/registerBank' method=post enctype=multipart/form-data>
+		<input type=submit value=RegisterBank style="height:40px; width:30%;display:inline-block; text-align:center;font-family: 'Arial Narrow', Arial, sans-serif;">
+	</form>
+	<br>
+
+	<form action='/getCompany' method=post enctype=multipart/form-data>
+		<input type=submit value=GetCompany style="height:40px; width:30%;display:inline-block; text-align:center;font-family: 'Arial Narrow', Arial, sans-serif;">
+	</form>
+	<br>
+
+	<form action='/getBank' method=post enctype=multipart/form-data>
+		<input type=submit value=GetBank style="height:40px; width:30%; display:inline-block; text-align:center;font-family: 'Arial Narrow', Arial, sans-serif;">
+	</form>
+	<br>
+	<form action='/getBill' method=post enctype=multipart/form-data>
+		<input type=submit value=GetBill style="height:40px; width:30%; display:inline-block; text-align:center;font-family: 'Arial Narrow', Arial, sans-serif;">
+	</form>
+	<br>
+	<form action='/createBill' method=post enctype=multipart/form-data>
+		<input type=submit value=CreateBill style="height:40px; width:30%;display:inline-block; text-align:center;font-family: 'Arial Narrow', Arial, sans-serif;">
+	</form>
+	<br>
+	<form action='/transfer' method=post enctype=multipart/form-data>
+		<input type=submit value=Transfer style="height:40px; width:30%;display:inline-block; text-align:center;font-family: 'Arial Narrow', Arial, sans-serif;">
+	</form>
+	
+	<br>
+	<form action='/financing' method=post enctype=multipart/form-data>
+		<input type=submit value=Financing style="height:40px; width:30%;display:inline-block; text-align:center;font-family: 'Arial Narrow', Arial, sans-serif;">
+	</form>
+
+	<br>
+	<form action='/repay' method=post enctype=multipart/form-data>
+		<input type=submit value=Repay style="height:40px; width:30%;display:inline-block; text-align:center;font-family: 'Arial Narrow', Arial, sans-serif;">
+	</form>
+	<br>
+
+	<hr align='center' width='1200' size='5' color='#87CEFA'>
+
+</div>
+{% endblock %}

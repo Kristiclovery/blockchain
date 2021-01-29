@@ -1,0 +1,26 @@
+<!-- register panel -->
+
+{% extends 'base.html' %}
+{% block content %}
+
+<div style="
+		width: 100%;
+        text-align: center;
+        font-family: 'Arial Narrow', Arial, sans-serif;
+    ">
+
+	<h1>Supply Chain Finance System</h1>
+	<hr align='center' width='1200' size='5' color='#87CEFA'>
+	<br>
+
+	<h1>Query Bank Information</h1>
+	<form action='/getBank/result' method=post enctype=multipart/form-data>
+		Bank Name <input type=text name=bname><br><br>
+		<input type=submit value=GetBank style="height:40px; width:240px; display:inline-block; text-align:center;font-family: ' Arial Narrow', Arial, sans-serif;">
+	</form>
+	<br>
+
+	<hr align='center' width='1200' size='5' color='#87CEFA'>
+
+</div>
+{% endblock %}
